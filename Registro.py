@@ -42,7 +42,7 @@ while pagamento !=1 and pagamento !=2:
 def calculo_desconto(pagamento,total):
     if pagamento == 1:
         if total > 200:
-            return total * 0.15  # à visto com desconto de 15%
+            return total * 0.15  # à vista com desconto de 15%
         elif total >= 100:
             return total * 0.10  # à vista com desconto de 10% dentro de um intervalo
     else:
@@ -57,6 +57,8 @@ desconto = calculo_desconto(pagamento,total_geral) #Desconto aplicado
 total_final = total_geral - desconto  #Total após o desconto
 
 lista_pagamento.append({"Total":total_geral,"Desconto":desconto,"Total a pagar":total_final})
+
+#Saída Formatada
 
 print("\n" + "="*40)
 print("        RELATÓRIO DA COMPRA")
