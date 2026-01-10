@@ -58,6 +58,8 @@ total_final = total_geral - desconto  #Total após o desconto
 
 lista_pagamento.append({"Total":total_geral,"Desconto":desconto,"Total a pagar":total_final})
 
+#Saída Formatada
+
 print("\n" + "="*40)
 print("        RELATÓRIO DA COMPRA")
 print("="*40)
