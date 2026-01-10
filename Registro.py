@@ -36,13 +36,13 @@ while pagamento !=1 and pagamento !=2:
     if pagamento == 1:
         print("Você selecionou crédito")
     elif pagamento == 2:
-        print ("Você selecionou débito")
+        print ("Você selecionou à vista")
         
 
 def calculo_desconto(pagamento,total):
-    if pagamento == 1:
+    if pagamento == 2:
         if total > 200:
-            return total * 0.15  # à visto com desconto de 15%
+            return total * 0.15  # à vista com desconto de 15%
         elif total >= 100:
             return total * 0.10  # à vista com desconto de 10% dentro de um intervalo
     else:
@@ -73,9 +73,9 @@ print("\nRESUMO DO PAGAMENTO")
 print("-"*40)
 
 if pagamento == 1:
-    forma = "À vista"
-else:
     forma = "Cartão de Crédito"
+else:
+    forma = "à Vista"
 
 print(f"Forma de pagamento: {forma}")
 print(f"Total sem desconto: R$ {total_geral:.2f}")
