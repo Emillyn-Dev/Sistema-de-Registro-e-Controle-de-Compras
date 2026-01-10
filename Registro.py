@@ -45,6 +45,8 @@ def calculo_desconto(pagamento,total):
             return total * 0.15  # à vista com desconto de 15%
         elif total >= 100:
             return total * 0.10  # à vista com desconto de 10% dentro de um intervalo
+        else:
+            return 0
     else:
         return 0
     
